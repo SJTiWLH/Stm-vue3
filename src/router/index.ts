@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AppLayout from '@/components/layout/AppLayout.vue'
-import indexView from '@/views/indexView.vue'
+import IndexView from '@/views/IndexView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,7 +13,7 @@ const router = createRouter({
         {
           path: '',
           name: 'index',
-          component: indexView,
+          component: IndexView,
         },
         {
           path: '/about',
