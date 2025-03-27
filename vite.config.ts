@@ -16,7 +16,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
     AutoImport({
-      imports: ['vue'],
+      imports: ['vue'],   // 自动导入vue相关api
       resolvers: [ElementPlusResolver(),IconsResolver()],
     }),
     Components({
@@ -28,7 +28,7 @@ export default defineConfig({
       ],
     }),
     Icons({
-      autoInstall: true,
+      autoInstall: true,  // 自动安装图标库
     }),
   ],
   resolve: {

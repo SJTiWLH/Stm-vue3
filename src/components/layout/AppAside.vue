@@ -10,7 +10,7 @@ import { isCollapse } from "./isCollapse.ts";
             <el-menu router unique-opened :collapse="isCollapse">
                 <!--router 表示路由跳转   unique-opened 表示二级标签默认不展开,自动关闭    collapse 表示折叠  -->
                 <a href="/" class="logo">
-                    <img src="@/assets/logo.svg" alt=""></img>
+                    <img src="@/assets/logo.svg" alt="" />
                     <h1>SysTemplate</h1>
                 </a>
                 <el-sub-menu index="1"> <!--el-sub-menu 标签表示有二级标签  -->
@@ -40,10 +40,10 @@ import { isCollapse } from "./isCollapse.ts";
 
                 </el-sub-menu>
 
-                <el-menu-item index="/users">
+                <el-menu-item index="/stm_tb">
                     <el-icon>
                         <IEpSetting />
-                    </el-icon> <span> 用户管理 </span>
+                    </el-icon> <span> 馒头用户管理 </span>
                 </el-menu-item>
 
                 <el-sub-menu index="2">

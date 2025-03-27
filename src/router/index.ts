@@ -18,17 +18,20 @@ const router = createRouter({
         {
           path: '/about',
           name: 'about',
-          // route level code-splitting
-          // this generates a separate chunk (About.[hash].js) for this route
-          // which is lazy-loaded when the route is visited.
-          component: () => import('../views/AboutView.vue'), // 懒加载方式
+          component: () => import('../views/AboutView.vue'), // 懒加载方式@/views/AboutView.vue
         },
+        {
+          path: '/stm_tb',
+          name: 'stm_tb',
+          component: () => import('@/views/stm_tb.vue'),
+        },
+
       ],
     },
     {
       path: '/:xxx(.*)*',
       name: 'ErrorPage',
-      component: () => import('../views/ErrorPage.vue'),
+      component: () => import('@/views/ErrorPage.vue'),
     }
 
   ],

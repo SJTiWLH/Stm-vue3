@@ -44,7 +44,9 @@ import { isCollapse } from "./isCollapse.ts";
 .el-header {
     display: flex;
     align-items: center;
-    background-color: rgb(221.7, 222.6, 224.4);
+    background-color: white;
+    margin-bottom: 1px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
 
     .el-icon {
         margin-right: 17px;
